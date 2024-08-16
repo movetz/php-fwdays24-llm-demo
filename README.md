@@ -11,7 +11,18 @@
 
 ## Launch
 
-`php bin/console ai-bot:ask` - to launch bot, type `exit` - to close
+```
+$client = new OpenAIClient($httpClient, $openAiKey);
+$bot = new RoutedBot(
+    $client,
+    new EmbeddingBasedBot($client, $em),
+    new SqlBasedBot($client, $em),
+);
+
+$answer = $bot->ask($question);
+```
+
+`CMD php bin/console ai-bot:ask` - to launch bot, type `exit` - to close
 
 ## Bot types
 
