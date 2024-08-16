@@ -11,7 +11,7 @@
 
 ## Launch
 
-```
+```php
 $client = new OpenAIClient($httpClient, $openAiKey);
 $bot = new RoutedBot(
     $client,
