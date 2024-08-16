@@ -29,7 +29,7 @@ $answer = $bot->ask($question);
 - [AiBot\ContextBasedBot.php](src/AiBot/ContextBasedBot.php) - use prompt as additional context source
 - [AiBot\EmbeddingBasedBot.php](src/AiBot/EmbeddingBasedBot.php)  - use embeddings and pg_vector extension as additional context
 - [AiBot\SqlBasedBot.php](src/AiBot/SqlBasedBot.php) - use generated SQL queries and fetch data from PostgreSQL
-- [AiBot\RoutedBasedBot.php](src/AiBot/RoutedBasedBot.php) - use ChatGPT router to choose EmbeddingBasedBot or SqlBasedBot
+- [AiBot\RoutedBot.php](src/AiBot/RoutedBot.php) - use ChatGPT router to choose EmbeddingBasedBot or SqlBasedBot
 
 ## Additional links
 
